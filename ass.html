@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>20 Maths Functions in JavaScript</h1>
+
+<p>Math.round(x)	Returns x rounded to its nearest integer</p>
+<p>Math.ceil(x)	Returns x rounded up to its nearest integer</p>
+<p>Math.floor(x)	Returns x rounded down to its nearest integer</p>
+<p>Math.trunc(x)	Returns the integer part of x</p>
+<p>Math.sign(x) returns if x is negative, null or positive:</p>
+<p>Math.pow(x, y) returns the value of x to the power of y:</p>
+<p>Math.sqrt(x) returns the square root of x:</p>
+<p>Math.abs(x) returns the absolute (positive) value of x:</p>
+<p>Math.sin(x) returns the sine (a value between -1 and 1) of the angle x (given in radians).</p>
+<p>Math.cos(x) returns the cosine (a value between -1 and 1) of the angle x (given in radians).</p>
+<p>Math.max() used to find the highest value in a list of arguments:</p>
+<p>Math.min() used to find the lowest value in a list of arguments:</p>
+<p>Math.random() returns a random number between 0 (inclusive), and 1 (exclusive):</p>
+<p>Math.log(x) returns the natural logarithm of x.</p>
+<p>cbrt(x)	Returns the cubic root of x</p>
+<p>tan(x)	Returns the tangent of an angle</p>
+<p>sinh(x)	Returns the hyperbolic sine of x</p>
+<p>cos(x)	Returns the cosine of x (x is in radians)</p>
+<p>tanh(x)	Returns the hyperbolic tangent of a number</p>
+
+
+<h1>20 Array Functions</h1>
+
+<p>names.length The length property returns the length (size) of an array: names.length</p>
+<p>Array toString() JavaScript method converts an array to a string of (comma separated) array values.</p>
+<p>JavaScript Array at() Get the Nth element of items</p>
+<p>JavaScript Array join() The join() method also joins all array elements into a string</p>
+<p>JavaScript Array pop() method removes the last element from an array:</p>
+<p>JavaScript Array push() method adds a new element to an array (at the end):</p>
+<p>JavaScript Array shift() method removes the first array element and "shifts" all other elements to a lower index.</p>
+<p>unshift() method adds a new element to an array (at the beginning), and "unshifts" older elements:</p>
+<p>concat() method creates a new array by merging (concatenating) existing arrays:</p>
+<p>copyWithin() The copyWithin() method copies array elements to another position in an array:</p>  
+<p>length()   // Returns the number of elements</p>
+<p>sort()   // Sorts the array</p>
+<p>Array.isArray() checks if variable is an array</p>
+<p>every(): Checks if all elements in the array pass the test implemented by the provided function.</p>
+<p>forEach(): Executes a provided function once for each array element</p>
+<p>filter(): Creates a new array with all elements that pass the test implemented by the provided function.</p>
+<p>find(): Returns the first element in the array that satisfies the provided testing function.</p>
+<p>some(): Checks if at least one element in the array passes the test implemented by the provided function.</p>
+<p>sort(): Sorts the elements of an array in place and returns the sorted array.</p>
+<p>entries(): Returns a new Array Iterator object that contains the key/value pairs for each index in the array.</p>
+<p>isArray(): Determines whether the passed value is an array.</p>
+
+
+<h1> 20 String Functions </h1>
+<p>1</p>
+T<p>he charAt() method returns the character at a specified index (position) in a string:
+    <br>let text = "HELLO WORLD";<br>
+        let char = text.charAt(0);
+</p>
+<p>2</p>
+<p>The charCodeAt() method returns the code of the character at a specified index in a string: <br>
+
+    The method returns a UTF-16 code (an integer between 0 and 65535). <br>
+    let text = "HELLO WORLD"; <br>
+let char = text.charCodeAt(0); <br>
+returns 72 a Unicode value.
+</p>
+
+<p>3</p>
+<p>JavaScript String slice() <br>
+    slice() extracts a part of a string and returns the extracted part in a new string.
+    
+    The method takes 2 parameters: start position, and end position (end not included). <br> <br>
+    let text = "Apple, Banana, Kiwi"; <br>
+    let part = text.slice(7, 13); <br> <br>
+    If you omit the second parameter, the method will slice out the rest of the string: <br> <br>
+    let part = text.slice(7); <br> <br>
+    If a parameter is negative, the position is counted from the end of the string: <br> <br>
+    let part = text.slice(-12); <br> <br>
+</p><br><br><br>
+
+<p>4</p>
+<p>JavaScript String substr() <br>
+    substr() is similar to slice(). <br><br>
+    
+    The difference is that the second parameter specifies the length of the extracted part. <br><br>
+    let str = "Apple, Banana, Kiwi"; <br>
+    let part = str.substr(7, 6);<br>
+    If you omit the second parameter, substr() will slice out the rest of the string. 
+</p> <br><br><br>
+
+<p>5</p>
+<p>JavaScript String toUpperCase() <br><br>
+    A string is converted to upper case with toUpperCase(): <br>
+    let text1 = "Hello World!";<br>
+    let text2 = text1.toUpperCase();<br>
+
+</p>
+
+<p>6</p>
+<p>JavaScript String toOLowerCase() <br><br>
+    A string is converted to lower case with toLowerCase(): <br>
+    let text1 = "Hello World!";<br>
+    let text2 = text1.toLowerCase();<br>
+
+</p> <br><br><br>
+
+<p>7</p>
+<p>JavaScript String concat() <br><br>
+    concat() joins two or more strings: <br><br>
+    let text1 = "Hello";<br>
+    let text2 = "World";<br>
+    let text3 = text1.concat(" ", text2);<br><br>
+
+    this does same thing
+    text = "Hello" + " " + "World!";<br>
+    text = "Hello".concat(" ", "World!");<br>
+</p>
+
+<p>8</p>
+<p>
+    JavaScript String trim() <br><br>
+    The trim() method removes whitespace from both sides of a string:<br><br>
+
+    Example <br>
+    let text1 = "      Hello World!      ";<br>
+    let text2 = text1.trim();<br>
+</p>
+
+
+<p>10</p>
+<p>
+    JavaScript String trimeEnd() <br><br>
+
+The trimEnd() method works like trim(), but removes whitespace only from the start of a string. <br><br>
+
+Example <br>
+let text1 = "     Hello World!     "; <br>
+let text2 = text1.trimEnd();<br>
+</p><br><br>
+
+<p>11</p> <br>
+<p>Replacing String Content <br><br>
+    The replace() method replaces a specified value with another value in a string: <br>
+    
+    Example <br>
+    let text = "Please visit Microsoft!"; <br>
+    let newText = text.replace("Microsoft", "W3Schools"); <br>
+    Replacing String Content <br>
+    The replace() method replaces a specified value with another value in a string: <br>
+
+    Example <br>
+    let text = "Please visit Microsoft!"; <br>
+    let newText = text.replace("Microsoft", "W3Schools"); <br>
+</p><br><br>
+
+<p>12</p>
+<p>
+    JavaScript String ReplaceAll()
+    The replaceAll() method allows you to specify a regular expression instead of a string to be replaced. <br><br>
+    text = text.replaceAll("Cats","Dogs"); <br>
+    text = text.replaceAll("cats","dogs"); <br>
+    If the parameter is a regular expression, the global flag (g) must be set, otherwise a TypeError is thrown. <br>
+    text = text.replaceAll(/Cats/g,"Dogs");
+text = text.replaceAll(/cats/g,"dogs");
+
+</p>
+
+<p>13</p><br><br>
+<p>
+    JavaScript String split() <br><br>
+    A string can be converted to an array with the split() method:<br><br>
+
+    Example<br>
+    text.split(",")    // Split on commas<br>
+    text.split(" ")    // Split on spaces<br>
+    text.split("|")    // Split on pipe<br>
+</p>
+
+<p>14</p><br><br>
+<p>match(): Retrieves the result of matching a string against a regular expression.</p>
+<br><br>
+<p>15</p><br><br>
+<p>endsWith(): Determines whether a string ends with the characters of a specified string, returning true or false.</p><br></br>
+
+<p>16</p><br><br>
+<p>replace(): Searches a string for a specified value or regular expression and returns a new string where the specified values are replaced</p><br><br>
+
+<p>17</p>
+<p>toLocaleUpperCase(): Returns the calling string value converted to uppercase, according to any locale-specific case mappings.</p><br><br>
+
+<p>18</p><br><br>
+<p>toLocaleLowerCase(): Returns the calling string value converted to lowercase, according to any locale-specific case mappings.</p><BR></BR>
+
+<P>19</P><br><br>
+<p>startsWith(): Checks whether a string starts with a specified string</p><br><br>
+
+<p>20</p><br><br>
+<p>endsWith(): Checks whether a string ends with a specified string.</p><br><br>
+
+
+
+
+
+
+
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<p id="demo"></p>
+
+
+    <script src="ass.js">
+
+
+    </script>
+</body>
+</html>
